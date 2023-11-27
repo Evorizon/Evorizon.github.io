@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe8cd;
+}
+
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Header.png);
+    background-position: center;
+    background-size: cover;
+    height: 20em;
+}
+header h1{
+    font-size: 4em;
+    display: flex;
+    color: #af5700;
+    justify-content: center;
+}
+.menu{
+    height: 6em;
+    display: flex;
+    justify-content: space-around;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+.menu li {
+    display: flex;
+    margin-left: 2em;
+    align-items: center;
+}
+.menu li a{
+    text-decoration: none;
+    color: orange;
+}
+.menu li a:hover{
+    color: white;
+    transition: all 0.5s;
+}
+
+
+
+/*detalles*/
+.productodet h2, .sistema h3, .contenedorHard h3{
+    font-size: 40px;
+}
+.productodet{
+   
+    text-align: center;
+}
+
+.contenedorHard{
+    margin-top: 0.5em;
+    padding: 1em;
+}
+.hardware{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+.hardwareP{
+    width: 25em;
+    margin: 3em;
+    padding: 2em;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 1EM;
+
+}
+/*
+.hardwareP::before{
+    box-shadow: 3px 3px 3px;
+}*/
+.hardwareP img{
+    width: 100%;
+    padding: 2em;
+    border-radius: 4em;
+    height: 20em;
+    object-fit: cover;
+    width: 20em;
+
+}
+
+.disenoProduc{
+    margin-top: 1em;
+    text-align: center;
+    padding: 3em;
+}
+.disenoProduc h3{
+    font-size: 30px;
+}
+.textDise{
+    padding: 3em;
+}
+.disenoTinkercad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.disenoTinkercad img{
+    border-radius: 3em;
+    margin-top: 3em;
+    padding: 2em;
+    width: 30em;
+}
+
+/*footer*/
+footer{
+    background-color: wheat;
+    color: black;
+    height: 10em;
+}
+.titulo{
+    text-align: center;
+    padding: 1em;
+}
+.contenedorFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer img{
+    width: 2em;
+    margin-right: 2em;
+}
+footer .insta, .correo{
+    align-items: center;
+    display: flex;
+    
+}
+.insta a, .correo a {
+    color: black;
+    text-decoration: none;
+}
+.insta a:hover, .correo a:hover{
+    transition: all 0.5s;
+    color: #af5700;
+}
+
+
+
+
+
+/*media screen*/
+@media (max-width:1000px){
+    body{
+        width: 100%;
+    }
+    html{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    .disenoTinkercad{
+        display: flex;
+        width: 100%;
+        
+    }
+    .disenoTinkercad img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+}
+@media (max-width:600px){
+    body{
+        width: 100vh;
+    }
+    html{
+        width: 100vh;
+    }
+    header{
+        width: 100vh;
+    }
+    footer{
+        width: 100vh;
+    }
+    .disenoTinkercad{
+        display: flex;
+        width: 100%;
+        
+    }
+    .disenoTinkercad img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+}
+
+@media (max-width:400px){
+    body{
+        width: 100vh;
+    }
+    html{
+        width: 100vh;
+    }
+    header{
+        width: 100vh;
+    }
+    footer{
+        width: 100vh;
+    }
+}
